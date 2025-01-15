@@ -15,7 +15,7 @@ function MyProfile() {
     dob:'2000-01-20'
   })
 
-  const [isEdit,setIsEdit]=useState(true);
+  const [isEdit,setIsEdit]=useState(false);
 
   return (
     <div className="mb-20 flex flex-col">

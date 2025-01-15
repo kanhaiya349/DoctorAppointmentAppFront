@@ -11,7 +11,7 @@ function TopDoctors() {
         <p className="text-center text-sm mb-10">Simply browse through our extensive list of trusted doctors.</p>
         <div className="w-full grid grid-cols-auto gap-6">
             {doctors.slice(0,10).map((item,index)=>(
-                <div onClick={()=>navigate(`/appointment/${item._id}`)} className="border border-[#C9D8FF] flex flex-col rounded-xl cursor-pointer hover:-translate-y-3 transition-all ease-in-out duration-500" key={index}>
+                <div onClick={()=>{navigate(`/appointment/${item._id}`);scrollTo(0,0)}} className="border border-[#C9D8FF] flex flex-col rounded-xl cursor-pointer hover:-translate-y-3 transition-all ease-in-out duration-500" key={index}>
                     <img src={item.image} className="bg-[#EAEFFF] rounded-t-xl mb-4" alt="" />
                     <div className="flex items-center gap-2 ml-3">
                         <p className="w-2 h-2 bg-green-500 rounded-full"></p>

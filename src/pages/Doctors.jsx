@@ -171,7 +171,7 @@ function Doctors() {
         <div className="w-full grid grid-cols-auto gap-6">
           {filterDoc.map((item, index) => (
             <div
-              onClick={() => navigate(`/appointment/${item._id}`)}
+              onClick={() => {navigate(`/appointment/${item._id}`);scrollTo(0,0)}}
               className="border border-[#C9D8FF] flex flex-col rounded-xl cursor-pointer hover:-translate-y-3 transition-all ease-in-out duration-500"
               key={index}
             >
